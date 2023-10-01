@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(253, 254, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif; 
+}
+
+.container {
+    width: 100%; 
+    max-width: 1200px; 
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    background-color: rgb(245, 239, 231);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.contact {
+    margin-left: 20px;
+}
+
+.contact h1 {
+    font-size: 24px;
+}
+
+.about,
+.skills,
+.languages,
+hobbies,
+experience,
+education,
+projects {
+    margin-bottom: 30px;
+}
+
+h2 {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    font-size: 20px;
+}
+
+ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+ul li::before {
+    content: '\2022';
+    color: #007bff;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.job {
+    margin-bottom: 30px;
+}
+
+.job h3 {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.project h3 {
+    font-size: 18px;
+    margin-top: 10px;
+}
+@media (max-width: 768px) {
+    .full {
+        display: block; 
+    }
+    
+    .left, .right {
+        width: 100%; 
+        padding: 20px;
+    }
+    
+    .project {
+        margin-bottom: 20px; 
+    }
+}
